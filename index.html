@@ -1,0 +1,67 @@
+<!--  
+GUI Assignment: hw4 pt2
+David Sun, UMass Lowell Computer Science, david_sun@student.uml.edu 
+Copyright (c) 2023 by David Sun. All rights reserved. May be freely copied 
+or excerpted for educational purposes with credit to the author. 
+updated by DS on December 05, 2023 at 12:47 AM 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multiplication Table Generator</title>
+    <meta charset="utf-8">
+    <!-- link to external css -->
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Include the jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Include the jQuery UI CDN -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Include the jQuery Validation Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.20.0/dist/jquery.validate.min.js"></script>
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#formTab">Form</a></li>
+            <li><a href="#tableTab">Table</a></li>
+        </ul>
+        <div id="formTab">
+            <header>
+                <h1>Multiplication Table Generator</h1>
+            </header>
+            <form id="multiplicationForm">
+                <label for="minColVal">Smallest Column Value:</label><br>
+                <input type="number" id="minColVal" name="col1" required><br>    <!-- val of "for" and "id" should be identical to bind them together -->
+                <div id="minColValSlider"></div>
+                <br>
+                
+                <label for="maxColVal">Biggest Column Value:</label><br>
+                <input type="number" id="maxColVal" name="col2" required><br>
+                <div id="maxColValSlider"></div>
+                <br>
+        
+                <label for="minRowVal">Smallest Row Value:</label><br>
+                <input type="number" id="minRowVal" name="row1" required><br>
+                <div id="minRowValSlider"></div>
+                <br>
+        
+                <label for="maxRowVal">Biggest Row Value:</label><br>
+                <input type="number" id="maxRowVal" name="row2" required><br>
+                <div id="maxRowValSlider"></div>
+                <br>
+        
+                <input type="submit" value="Generate Table">            <!-- submit button -->
+            </form>
+        </div>
+        
+        <script src="myScript.js"></script>                        <!-- link to external javascript -->
+    
+        <!-- Container for the multiplication table -->
+        <div id="tableContainer"></div>
+    </div>
+</body>
+
+</html>

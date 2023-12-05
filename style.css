@@ -1,0 +1,164 @@
+/*
+GUI Assignment: hw4 pt2
+David Sun, UMass Lowell Computer Science, david_sun@student.uml.edu 
+Copyright (c) 2023 by David Sun. All rights reserved. May be freely copied 
+or excerpted for educational purposes with credit to the author. 
+updated by DS on December 05, 2023 at 12:47 AM 
+*/
+body {
+    margin: 0;
+    border: 0;
+    padding: 15px;
+
+    background-color: #14202e;
+}
+
+/* Style the header */
+header {
+    margin-bottom: 10px;
+    border: 0;
+    padding: 5px;
+
+    border-radius: 5px;
+
+    text-align: center;
+    background-color: #253D5B;
+    color: #CFCECA;
+}
+
+/* Style the header h1 */
+header h1 {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    font-family: Arial, Verdana, sans-serif;
+    
+}
+
+
+
+.ui-slider {
+    margin: 5px 5px 5px 0;
+    border: 0;
+    padding: 0;
+    width: 170px;
+    text-align: left;
+}
+
+
+
+
+form {
+    margin: 0 10px 10px 0;
+    border: 0;
+    padding: 15px 10px 15px 10px;
+
+    border-radius: 5px;
+
+    
+    width: 180px; /* Allow it to expand to 100% if the content is smaller */
+
+    float: left;
+    
+    background-color: #253D5B;
+}
+
+/* Style the form labels */
+form label {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    font-weight: normal;
+    color: #CFCECA;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+
+
+/* Style the form input fields */
+form input[type="number"] {
+    margin: 0;
+    border: 0;
+    padding: 4px;
+
+    border-radius: 4px;
+}
+
+#error1, #error2, #error3, #error4 {
+    margin: 0;
+    border: 0;
+    padding: 4px;
+
+    color: #AC8181;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 10px;
+}
+
+/* Style the Generate button */
+form input[type="submit"] {
+    margin: 0;
+    border: 0;
+    padding: 5px;
+
+    border-radius: 4px;
+    
+    background-color: #AC8181;
+    color: #F8F8FF;
+    
+    font-weight: bold;
+    text-align: center;
+}
+
+#tableContainer {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    float: left;
+} 
+table {
+    margin: 0 15px 50px 0;
+    border: 0;
+    padding: 15px 10px 15px 10px;
+
+    border-radius: 5px;
+    
+    background-color: #253D5B;
+}
+/* Style the first row */
+table th {
+    margin: 0;
+    border: 0;
+    padding: 0 4px 4px 4px;
+    
+    text-align: left;
+    font-weight: bold;
+    color: #C9A959;
+}
+/* Style the first column except for the cell on the first row */
+table tr:not(:first-child) td:first-child {
+    margin: 0;
+    border: 0;
+    padding: 4px 4px 4px 0;
+
+    font-weight: bold;
+    color: #C9A959;
+}
+/* style all the cells in the table */
+table tr:not(:first-child) td:not(:first-child) {
+    /* after researching, margin does not work on individual cells */
+    margin: 2px;
+    border: 0;
+    padding: 4px;   
+
+    
+
+    background-color: #14202e;
+    color: #C9A959;
+}
+
+
+
